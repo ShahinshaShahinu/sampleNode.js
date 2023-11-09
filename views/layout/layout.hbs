@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {{#if user}}
+  <title>{{title}}</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/VjxISujD0bP9aJtrHXvCtmknLX_7uFWyDmi6kA97U77k-1Rd2VLtc__9TZ5eYaWimSg" type="image/x-icon">
+  <!-- Add a unique title for the user section -->
+  <title>User Section Title</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="vendors/linericon/style.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/themify-icons.css" />
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css" />
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+  <link rel="stylesheet" href="vendors/animate-css/animate.css" />
+  <link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="icon" type="image/svg+xml" href="favico.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Css Styles -->
+  <link rel="stylesheet" href="/singleeee/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="/singleeee/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/singleeee/css/elegant-icons.css" type="text/css">
+  <link rel="stylesheet" href="/singleeee/css/jquery-ui.min.css" type="text/css">
+  <link rel="stylesheet" href="/singleeee/css/magnific-popup.css" type="text/css">
+  <link rel="stylesheet" href="/singleeee/css/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="/singleeee/css/slicknav.min.css" type="text/css">
+  <link rel="stylesheet" href="/singleeee/css/style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+{{/if}}
+{{#if admin}}
+  <title>Admin Section Title</title>
+  <link href="AdminPanel/img/logo/logo.png" rel="icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- data table -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+{{/if}}
+</head>
+
+<body>
+  <link rel="icon" type="image/svg+xml" href="favico.ico" />
+  {{#if user}}
+  {{>userHeader}}
+  {{/if}}
+  {{#if admin}}
+  {{>adminHeader}}
+  {{/if}}
+  {{{body}}}
+  {{#if userFooter}}
+  {{>userFooter}}
+  {{/if}}
+  {{#if adminFooter}}
+  {{>adminFooter}}
+  {{/if}}
+  {{#if user}}
+  <!-- Include user-specific scripts here -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/stellar.js"></script>
+  <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+  <script src="vendors/isotope/isotope-min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+  <script src="vendors/counter-up/jquery.counterup.js"></script>
+  <script src="js/mail-script.js"></script>
+  <script src="js/theme.js"></script>
+  {{/if}}
+  {{#if admin}}
+  <!-- Include admin-specific scripts here -->
+  <script src="AdminPanel/vendor/jquery/jquery.min.js"></script>
+  <script src="AdminPanel/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="AdminPanel/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="AdminPanel/js/ruang-admin.min.js"></script>
+  <script src="AdminPanel/vendor/chart.js/Chart.min.js"></script>
+  <script src="AdminPanel/js/demo/chart-area-demo.js"></script>
+  {{/if}}
+</body>
+
+</html>
